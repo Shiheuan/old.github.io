@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+<!--<title>Getting Familiar with CSS3 Transition</tditle> -->
+	<title>CSS3 Matching Game</title>
+<!--<link rel="stylesheet" href="css/css3transition.css"/> -->
+<!--<link rel="stylesheet" href="css/css3flip.css"/> -->
+<link rel="stylesheet" href="css/matchgame.css"/>
+</head>
+<body>
+	<header>
+		<h1>CSS3 Matching Game</h1>
+	</header>
+
+<!-- 过渡效果 -->
+<!--<section id="game">
+		<div id="cards">
+			<div id="card1" class="card cardAK"></div>
+			<div id="card2" class="card cardAQ"></div>
+		</div>
+	</section>
+	<footer>
+		<p>This is an example of transitioning cards.</p>
+	</footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+	$(function(){
+		$("#card1").addClass("moveAndScale");
+		$("#card2").addClass("rotateRight");
+	});
+</script> -->
+<!-- 翻牌效果 -->
+<!--<section id="game">
+		<div id="cards">
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back cardAK"></div>
+			</div>
+			<div class="card">
+				<div class="face front"></div>
+				<div class="face back cardAQ"></div> 
+			</div>
+		</div>
+	</section>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script>
+	$(function(){
+		$("#cards").children().each(function(index){
+			$(this).click(function(){
+				$(this).toggleClass("card-flipped");
+			});
+		});
+	});
+</script> -->
+
+<!-- 准备游戏结构 -->
+<section id="game">
+	<div id="cards">
+		<div class="card">
+			<div class="face front"></div>
+			<div class="face back"></div>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<p>This is a Demo of creating a matching game with CSS3. </p>
+	<p>You can click the cards and you should remember the cards. </p>
+	<p>When you flip two same cards, they will be removed.Remove all the cards, and you win the game.</p>
+	<p><a href="../../index.html" id="home"><img src="../../images/home.png" alt="back to index" /></a></p>
+	<p>Welcome to Gala Game.you can flip the card to know detils.</p>
+</footer>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/html5games.matchgame.js"></script>
+
+</body>
+</html>

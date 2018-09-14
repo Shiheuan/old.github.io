@@ -1,0 +1,24 @@
+body{
+	background:#aaa;
+}
+.card{
+	width:80px;
+	height:120px;
+	margin:20px;
+	background:#efefef;
+	position:absolute;
+	-webkit-transition:all 1s linear;
+}
+.cardAK{
+	background:url(../images/AK.png);
+	left:150px;
+}
+.cardAQ{
+	background:url(../images/AQ.png);
+}
+.rotateRight{
+	-webkit-transform:rotate3d(1,1,0,90deg);
+}
+.moveAndScale{
+	-webkit-transform:rotate3d(1,0,0,90deg);
+}
