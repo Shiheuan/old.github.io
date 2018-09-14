@@ -1,0 +1,84 @@
+body {
+	text-align: center;	
+	background: #a46740 url(../images/bg.jpg);
+	color: #ccc;
+}
+header,h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size:30px;
+}
+h2 {
+	font-family: 'Sue Ellen Francisco', cursive;
+}
+footer {
+	font-family: 'Permanent Marker',  sans-serif;
+}
+.label {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 16px;
+	font-weight:bold;
+}
+a, a:visited {
+	color: #aea;
+	text-decoration: none;	
+	-webkit-transition: all .3s;
+	padding: 5px;
+}
+a:link {
+	opacity:0.4;
+}
+a:hover {
+	opacity:1.0;
+	text-shadow: none;
+}
+#game {
+	border-radius: 10px;
+	border: 1px solid #666;
+	
+	position: relative;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 750px;
+	margin: 0 auto;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+
+	display: box;
+	box-pack: center;
+	box-align: center;
+}
+#ES {
+	font-family: 'Bad Script', sans-serif;
+	font-size: 14px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	visibility: hidden;
+}
+#GGS {
+	font-family: 'Bad Script', sans-serif;
+	font-size: 15px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	visibility: visible;
+}
+#left {
+	position:absolute;
+	top: 220px;
+	left: -230px;
+	visibility: hidden;
+}
+#right {
+	position:absolute;
+	top: 220px;
+	left: 500px;
+}

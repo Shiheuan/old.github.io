@@ -1,0 +1,316 @@
+body {
+	text-align: center;	
+	background: #a46740 url(../images/bg.jpg);
+	color: #ccc;
+}
+header,h1 {
+	font-family: 'Dosis', sans-serif;
+	font-size:30px;
+}
+h2 {
+	font-family: 'Sue Ellen Francisco', cursive;
+}
+h3 {
+	font-family: 'Sue Ellen Francisco', cursive;
+}
+footer {
+	font-family: 'Permanent Marker',  sans-serif;
+}
+li {
+	width: 500px;
+	height: 120px;
+}
+.label {
+	font-family: 'Permanent Marker', cursive;
+	font-size: 16px;
+	font-weight:bold;
+}
+a, a:visited {
+	color: #aea;
+	text-decoration: none;	
+	-webkit-transition: all .3s;
+	padding: 5px;
+}
+a:link {
+	opacity:0.4;
+}
+a:hover {
+	opacity:1.0;
+	text-shadow: none;
+}
+
+#game {
+	border-radius: 10px;
+	border: 1px solid #666;
+	
+	position: relative;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 750px;
+	margin: 0 auto;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+
+	display: box;
+	box-pack: center;
+	box-align: center;
+}
+#newstable1 {
+	border-radius: 10px;
+	border: 1px solid #666;
+	
+	position: relative;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 960px;
+	margin: 0 auto;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+
+	display: box;
+	box-pack: center;
+	box-align: center;	
+}
+#newstable2 {
+	border-radius: 10px;
+	border: 1px solid #666;
+	
+	position: relative;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 1500px;
+	margin: 0 auto;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+
+	display: box;
+	box-pack: center;
+	box-align: center;
+}
+#newstable3 {
+	border-radius: 10px;
+	border: 1px solid #666;
+	
+	position: relative;
+	background: #232 url(../images/table.jpg);
+	width: 500px;
+	height: 2350px;
+	margin: 0 auto;
+	
+	display: -webkit-box;
+	-webkit-box-pack: center;
+	-webkit-box-align: center;
+	
+	display: -moz-box;
+	-moz-box-pack: center;
+	-moz-box-align: center;	
+
+	display: box;
+	box-pack: center;
+	box-align: center;	
+}
+#newstable4 {
+
+}
+#board {
+	font-family: 'Bad Script', sans-serif;
+	font-size: 14px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	visibility: hidden;
+}
+#news {
+	font-family: 'Bad Script', sans-serif;
+	font-size: 15px;
+	position:absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	visibility: visible;
+}
+#left {
+	position:absolute;
+	top: 220px;
+	left: -230px;
+	visibility: hidden;
+}
+#right {
+	position:absolute;
+	top: 220px;
+	left: 500px;
+}
+#back {
+	position:absolute;
+	top: 0px;
+	left: 0px;
+	width: 150px;
+}
+#cards {
+	position: relative;	
+	width: 120px;
+	}
+.card {
+	-webkit-perspective: 600;
+	width: 80px;
+	height: 120px;
+	
+	/* changed	*/
+	position: absolute;
+	
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.face {
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	
+	-moz-transition-property: opacity, -moz-transform, -moz-box-shadow;
+	-moz-transition-duration: .3s;
+	-webkit-transition-property: opacity, -webkit-transform, -webkit-box-shadow;
+	-webkit-transition-duration: .3s;
+	transition-property: opacity, transform, box-shadow;
+	transition-duration: .3s;
+	
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	
+}
+
+.front {	
+	background: #999 url(../images/deck.png) 0 -480px;
+	z-index: 8;
+}
+
+.back {
+	background: #efefef url(../images/deck.png);
+	
+	-moz-transform: rotate3d(0,1,0,-180deg);
+	-webkit-transform: rotate3d(0,1,0,-180deg);
+	transform: rotate3d(0,1,0,-180deg);
+	
+	z-index: 10;
+}
+
+.card:hover .face{
+	-webkit-box-shadow: 0 0 20px #aaa;
+	box-shadow: 0 0 10px #aaa;
+}
+
+.card-flipped .face{
+	-webkit-box-shadow: 0 0 20px #aaa;
+	box-shadow: 0 0 10px #aaa;		
+}
+.card-flipped .front {
+	-moz-transform: rotate3d(0,1,0,180deg);
+	-webkit-transform: rotate3d(0,1,0,180deg);
+	transform: rotate3d(0,1,0,180deg);
+	
+	/* ensure the front face is below the back face */
+	z-index: 10;
+}
+
+.card-flipped .back {
+	-moz-transform: rotate3d(0,1,0,0deg);
+	-webkit-transform: rotate3d(0,1,0,0deg);
+	transform: rotate3d(0,1,0,0deg);
+	
+	/* ensure the back face is on top of the front face */		
+	z-index: 8;
+}
+
+.cardCA {background-position: 0 -240px;}
+.cardC2 {background-position: -80px -240px;}
+.cardC3 {background-position: -160px -240px;}
+.cardC4 {background-position: -240px -240px;}
+.cardC5 {background-position: -320px -240px;}
+.cardC6 {background-position: -400px -240px;}
+.cardC7 {background-position: -480px -240px;}
+.cardC8 {background-position: -560px -240px;}
+.cardC9 {background-position: -640px -240px;}
+.cardC10 {background-position: -720px -240px;}
+
+#items {
+	position:absolute;
+	top: 0;
+	left: 140px;
+	width: 300px;
+	padding: 10px;
+}
+.item1 {
+	position:absolute;
+	top: 120px;
+	left: 0;
+	width: 300px;
+	padding: 10px;
+}
+.item2 {
+	position:absolute;
+	top: 280px;
+	left: 0;
+	width: 300px;
+	padding: 10px;
+}
+.item3 {
+	position:absolute;
+	top: 440px;
+	left: 0;
+	width: 300px;
+	padding: 10px;
+}
+.item4 {
+	position:absolute;
+	top: 600px;
+	left: 0;
+	width: 300px;
+	padding: 10px;
+}
+#text {
+	position: relative;
+	top: 0px;
+	left: 0;
+	padding: 10px;
+	font-family: 'Bad Script', sans-serif;
+	font-size: 14px;
+}
+table {
+	padding: 10px;
+	padding-left:40px;
+	border-style: groove;
+	width:400px;
+}
+#userlogin {
+	float:left;
+	margin-left:40px;
+	width:400px;
+	height: 200px;
+}
+#userregister {
+	float:left;
+	margin-left:40px;
+	width:400px;
+}
