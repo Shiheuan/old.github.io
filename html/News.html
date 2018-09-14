@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+	<meta charset=utf-8>
+	<title>NEWS of Gala Gam&eacute; Studio</title>
+	<link rel="stylesheet" href="../css/news.css" />
+	<link href='http://fonts.googleapis.com/css?family=Dosis' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Permanent+Marker' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Sue+Ellen+Francisco' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<h1>Euan Shih and the Gala</h1>
+	</header>
+	<section id="game">
+		<a id="left" href="#news"><img src="../images/left.png" alt="go to 'News'" title="go to 'News'"/></a>
+		<a id="right" href="#board"><img src="../images/right.png" alt="go to 'Board'" title="go to 'Board'" /></a>
+		<div id="news">
+			<h2>NEWSPAPERS</h2>
+			<div id="cards">			
+				<div class="card card-flipped">
+					<div class="face back"></div>
+					<div class="face front"></div>
+				</div> <!-- .card -->		
+			</div> <!-- #cards -->
+			<div id="items">
+				<a href="newsNum1.html" class="item1">The Indie Game Studio 'GalaGame' was founded<br/>[2014-2-17]</a>
+				<a href="newsNum2.html" class="item2">Hearthstone&reg; Now Available on Mobile<br/>[2015-4-14]</a>
+				<a href="newsNum3.html" class="item3">The history of Activision Blizzard<br/>[2015-5-20]</a>
+				<a href="newsNum4.html" class="item4"></a>
+			</div><!-- #items-->
+		</div><!-- #news -->
+
+		<div id="board">
+			<h2>MESSAGE BOARD</h2>
+			<p>Welcome to MESSAGE BOARD, Please login or create an Account.</p>
+			<p>If you have any suggestion of us or our GAME, please lease a message to us.We'll be better in the future!</p>
+			<div id="userlogin">
+				<h2>LOGIN</h2>
+				<table>
+					<tr>
+						<td>USERNAME</td>
+						<td><input type="text" id="login_username"/></td>
+					</tr>
+					<tr>
+						<td>PASSWORD</td>
+						<td><input type="password" id="login_password"/></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="middle"><input type="button" value="LOGIN" onclick="login()" /></td>
+					</tr>
+				</table>
+			</div><!-- #userlogin-->
+			<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#ed7cb9 SIZE=10>
+			<div id="userregister">
+				<h2>REGISTER NEW</h2>
+				<table>
+					<tr>
+						<td>USERNAME</td>
+						<td><input type="text" id="username" /></td>
+					</tr>
+					<tr>
+						<td>PASSWORD</td>
+						<td><input type="password" id="password" /></td>
+					</tr>
+					<tr>
+						<td>E-MAIL		</td>
+						<td><input type="text" id="email" /></td>
+					</tr>
+					<tr>
+						<td colspan="2" align="middle" ><input type="button" value="REGISTER" onclick="register()" /></td>
+					</tr>
+				</table>
+			</div><!-- #userregister-->
+			<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=2)" width="80%" color=#ed7cb9 SIZE=10>
+		</div><!-- #board -->
+	</section>
+	<footer>
+		<p><a href="../index.html" id="home"><img src="../images/home.png" alt="back to index" /></a></p>
+		<p>Welcome to Gala Game.you can flip the card to know detils.</p>
+	</footer>
+<script src="../js/jquery-1.11.2.min.js"></script>
+<script src="../js/news.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/randomBg.js"></script>
+</body>
+</html>
